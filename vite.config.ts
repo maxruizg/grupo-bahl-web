@@ -16,14 +16,6 @@ export default defineConfig({
   build: {
     cssMinify: true,
     minify: "esbuild",
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          animations: ["framer-motion"],
-        },
-      },
-    },
   },
   server: {
     port: 3000,
