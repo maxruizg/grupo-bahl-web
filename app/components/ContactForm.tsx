@@ -82,8 +82,8 @@ export default function ContactForm() {
     <section id="contacto" className="section-padding bg-[#0d0d0d] relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-radial from-[rgba(201,162,39,0.03)] to-transparent rounded-full blur-3xl" />
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-radial from-[rgba(201,162,39,0.02)] to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-radial from-[rgba(219,39,119,0.03)] to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-radial from-[rgba(219,39,119,0.02)] to-transparent rounded-full blur-3xl" />
       </div>
 
       <div className="container-custom relative z-10">
@@ -95,12 +95,12 @@ export default function ContactForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block text-[var(--color-gold)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
+            <span className="inline-block text-[var(--color-pink)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
               Contacto
             </span>
             <h2 className="heading-display heading-lg mb-6">
               Ponte en{" "}
-              <span className="text-gradient-gold">contacto</span>{" "}
+              <span className="text-gradient-pink">contacto</span>{" "}
               con nosotros
             </h2>
             <p className="text-gray-400 text-lg mb-12">
@@ -111,8 +111,8 @@ export default function ContactForm() {
             {/* Contact Info */}
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/20 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-12 h-12 rounded-full bg-[var(--color-pink)]/10 border border-[var(--color-pink)]/20 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-[var(--color-pink)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
@@ -123,13 +123,13 @@ export default function ContactForm() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/20 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-12 h-12 rounded-full bg-[var(--color-pink)]/10 border border-[var(--color-pink)]/20 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-[var(--color-pink)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
-                  <a href="mailto:rhermo@grupobahlcasa.com" className="text-white hover:text-[var(--color-gold)] transition-colors">
+                  <a href="mailto:rhermo@grupobahlcasa.com" className="text-white hover:text-[var(--color-pink)] transition-colors">
                     rhermo@grupobahlcasa.com
                   </a>
                   <p className="text-gray-500 text-sm">Email</p>
@@ -137,17 +137,17 @@ export default function ContactForm() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/20 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-12 h-12 rounded-full bg-[var(--color-pink)]/10 border border-[var(--color-pink)]/20 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-[var(--color-pink)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
-                  <a href="tel:+525525844039" className="text-white hover:text-[var(--color-gold)] transition-colors">
+                  <a href="tel:+525525844039" className="text-white hover:text-[var(--color-pink)] transition-colors">
                     +52 55 2584 4039
                   </a>
                   <p className="text-gray-500 text-sm">Celular</p>
-                  <a href="tel:+525556898906" className="text-gray-400 hover:text-[var(--color-gold)] transition-colors text-sm">
+                  <a href="tel:+525556898906" className="text-gray-400 hover:text-[var(--color-pink)] transition-colors text-sm">
                     55 5689 8906 (Oficina)
                   </a>
                 </div>
@@ -175,7 +175,7 @@ export default function ContactForm() {
                     name="nombre"
                     value={formData.nombre}
                     onChange={handleChange}
-                    className="w-full px-6 py-5 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-600 focus:border-[var(--color-gold)]/50 focus:outline-none focus:ring-1 focus:ring-[var(--color-gold)]/20 transition-all"
+                    className="w-full px-6 py-5 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-600 focus:border-[var(--color-pink)]/50 focus:outline-none focus:ring-1 focus:ring-[var(--color-pink)]/20 transition-all"
                     placeholder="Tu nombre"
                   />
                 </div>
@@ -189,7 +189,7 @@ export default function ContactForm() {
                     name="apellido"
                     value={formData.apellido}
                     onChange={handleChange}
-                    className="w-full px-6 py-5 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-600 focus:border-[var(--color-gold)]/50 focus:outline-none focus:ring-1 focus:ring-[var(--color-gold)]/20 transition-all"
+                    className="w-full px-6 py-5 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-600 focus:border-[var(--color-pink)]/50 focus:outline-none focus:ring-1 focus:ring-[var(--color-pink)]/20 transition-all"
                     placeholder="Tu apellido"
                   />
                 </div>
@@ -210,7 +210,7 @@ export default function ContactForm() {
                   className={`w-full px-6 py-5 bg-white/[0.03] border rounded-xl text-white placeholder-gray-600 focus:outline-none focus:ring-1 transition-all ${
                     errors.email
                       ? "border-red-500/50 focus:border-red-500 focus:ring-red-500/20"
-                      : "border-white/10 focus:border-[var(--color-gold)]/50 focus:ring-[var(--color-gold)]/20"
+                      : "border-white/10 focus:border-[var(--color-pink)]/50 focus:ring-[var(--color-pink)]/20"
                   }`}
                   placeholder="tu@email.com"
                 />
@@ -230,7 +230,7 @@ export default function ContactForm() {
                   name="telefono"
                   value={formData.telefono}
                   onChange={handleChange}
-                  className="w-full px-6 py-5 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-600 focus:border-[var(--color-gold)]/50 focus:outline-none focus:ring-1 focus:ring-[var(--color-gold)]/20 transition-all"
+                  className="w-full px-6 py-5 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-600 focus:border-[var(--color-pink)]/50 focus:outline-none focus:ring-1 focus:ring-[var(--color-pink)]/20 transition-all"
                   placeholder="+52 55 1234 5678"
                 />
               </div>
@@ -250,7 +250,7 @@ export default function ContactForm() {
                   className={`w-full px-6 py-5 bg-white/[0.03] border rounded-xl text-white placeholder-gray-600 focus:outline-none focus:ring-1 transition-all resize-none ${
                     errors.mensaje
                       ? "border-red-500/50 focus:border-red-500 focus:ring-red-500/20"
-                      : "border-white/10 focus:border-[var(--color-gold)]/50 focus:ring-[var(--color-gold)]/20"
+                      : "border-white/10 focus:border-[var(--color-pink)]/50 focus:ring-[var(--color-pink)]/20"
                   }`}
                   placeholder="Describe tu evento o proyecto..."
                 />
@@ -268,7 +268,7 @@ export default function ContactForm() {
                 className={`w-full py-4 rounded-xl font-medium text-sm tracking-wider uppercase transition-all duration-300 ${
                   isSubmitted
                     ? "bg-green-600 text-white"
-                    : "bg-gradient-to-r from-[var(--color-gold)] to-[var(--color-gold-light)] text-[var(--color-black)] hover:shadow-lg hover:shadow-[var(--color-gold)]/20"
+                    : "bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-pink-light)] text-white hover:shadow-lg hover:shadow-[var(--color-pink)]/20"
                 } disabled:opacity-70 disabled:cursor-not-allowed`}
               >
                 {isSubmitting ? (

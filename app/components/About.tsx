@@ -23,8 +23,8 @@ export default function About() {
     <section id="nosotros" className="section-padding bg-[#0d0d0d] relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-radial from-[rgba(201,162,39,0.03)] to-transparent rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-radial from-[rgba(201,162,39,0.02)] to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-radial from-[rgba(219,39,119,0.03)] to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-radial from-[rgba(219,39,119,0.02)] to-transparent rounded-full blur-3xl" />
       </div>
 
       <div className="container-custom relative z-10">
@@ -36,18 +36,18 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="inline-block text-[var(--color-gold)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
+            <span className="inline-block text-[var(--color-pink)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
               Quiénes Somos
             </span>
             
             <h2 className="heading-display heading-lg mb-6">
               Somos{" "}
-              <span className="text-gradient-gold">Grupo Bahlcasa</span>
+              <span className="text-gradient-pink">Grupo Bahlcasa</span>
             </h2>
             
             <div className="space-y-4 text-gray-400 leading-relaxed">
               <p className="text-xl text-gray-300">
-                Una <span className="text-[var(--color-gold)] font-medium">Agencia 360</span>
+                Una <span className="text-[var(--color-pink)] font-medium">Agencia 360</span>
               </p>
               <p>
                 Aquí creemos que cada visión tiene el potencial de brillar y en 
@@ -67,7 +67,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
               >
-                <span className="block text-4xl md:text-5xl font-display text-[var(--color-gold)] mb-1">35+</span>
+                <span className="block text-4xl md:text-5xl font-display text-[var(--color-pink)] mb-1">35+</span>
                 <span className="text-sm text-gray-500 uppercase tracking-wider">Años</span>
               </motion.div>
               <motion.div
@@ -76,7 +76,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
               >
-                <span className="block text-4xl md:text-5xl font-display text-[var(--color-gold)] mb-1">500+</span>
+                <span className="block text-4xl md:text-5xl font-display text-[var(--color-pink)] mb-1">500+</span>
                 <span className="text-sm text-gray-500 uppercase tracking-wider">Eventos</span>
               </motion.div>
               <motion.div
@@ -85,7 +85,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                <span className="block text-4xl md:text-5xl font-display text-[var(--color-gold)] mb-1">100+</span>
+                <span className="block text-4xl md:text-5xl font-display text-[var(--color-pink)] mb-1">100+</span>
                 <span className="text-sm text-gray-500 uppercase tracking-wider">Clientes</span>
               </motion.div>
             </div>
@@ -100,14 +100,14 @@ export default function About() {
             className="relative aspect-square max-w-[500px] mx-auto"
           >
             {/* Rotating Ring */}
-            <div className="absolute inset-0 rounded-full border border-[var(--color-gold)]/20 animate-spin-slow" />
-            <div className="absolute inset-8 rounded-full border border-[var(--color-gold)]/30" />
-            <div className="absolute inset-16 rounded-full border border-[var(--color-gold)]/40" />
+            <div className="absolute inset-0 rounded-full border border-[var(--color-pink)]/20 animate-spin-slow" />
+            <div className="absolute inset-8 rounded-full border border-[var(--color-pink)]/30" />
+            <div className="absolute inset-16 rounded-full border border-[var(--color-pink)]/40" />
             
             {/* Center 360 */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
-                <span className="block text-7xl md:text-8xl font-display text-gradient-gold">360°</span>
+                <span className="block text-7xl md:text-8xl font-display text-gradient-pink">360°</span>
                 <span className="text-sm tracking-[0.4em] uppercase text-gray-500 mt-2 block">Agencia</span>
               </div>
             </div>
@@ -116,22 +116,22 @@ export default function About() {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-[var(--color-gold)] rounded-full"
+              className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-[var(--color-pink)] rounded-full"
             />
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 bg-[var(--color-gold)]/60 rounded-full"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 bg-[var(--color-pink)]/60 rounded-full"
             />
             <motion.div
               animate={{ x: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-1/2 left-0 -translate-y-1/2 w-2.5 h-2.5 bg-[var(--color-gold)]/80 rounded-full"
+              className="absolute top-1/2 left-0 -translate-y-1/2 w-2.5 h-2.5 bg-[var(--color-pink)]/80 rounded-full"
             />
             <motion.div
               animate={{ x: [0, 10, 0] }}
               transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-1/2 right-0 -translate-y-1/2 w-2 h-2 bg-[var(--color-gold)]/70 rounded-full"
+              className="absolute top-1/2 right-0 -translate-y-1/2 w-2 h-2 bg-[var(--color-pink)]/70 rounded-full"
             />
           </motion.div>
         </div>
@@ -145,9 +145,9 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15, duration: 0.6 }}
-              className="group relative p-8 md:p-10 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/5 hover:border-[var(--color-gold)]/20 transition-all duration-500"
+              className="group relative p-8 md:p-10 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/5 hover:border-[var(--color-pink)]/20 transition-all duration-500"
             >
-              <span className="text-5xl font-display text-[var(--color-gold)]/20 group-hover:text-[var(--color-gold)]/40 transition-colors">
+              <span className="text-5xl font-display text-[var(--color-pink)]/20 group-hover:text-[var(--color-pink)]/40 transition-colors">
                 {feature.number}
               </span>
               <h3 className="text-xl font-display text-white mt-4 mb-3">

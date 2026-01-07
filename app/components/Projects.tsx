@@ -58,7 +58,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
         {/* Gradient placeholder - replace with actual image */}
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-gray-800)] via-[var(--color-gray-900)] to-[var(--color-black)]">
           {/* Image overlay pattern */}
-          <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_50%,rgba(201,162,39,0.1),transparent_70%)]" />
+          <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_50%,rgba(219,39,119,0.1),transparent_70%)]" />
         </div>
 
         {/* Hover overlay */}
@@ -71,7 +71,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="inline-block w-fit px-4 py-1.5 rounded-full bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/30 text-[var(--color-gold)] text-xs tracking-wider uppercase mb-4"
+            className="inline-block w-fit px-4 py-1.5 rounded-full bg-[var(--color-pink)]/10 border border-[var(--color-pink)]/30 text-[var(--color-pink)] text-xs tracking-wider uppercase mb-4"
           >
             {project.category}
           </motion.span>
@@ -87,14 +87,14 @@ function ProjectCard({ project, index }: ProjectCardProps) {
           </p>
 
           {/* Year */}
-          <span className="text-[var(--color-gold)] text-sm font-medium">
+          <span className="text-[var(--color-pink)] text-sm font-medium">
             {project.year}
           </span>
 
           {/* Hover arrow */}
-          <div className="absolute bottom-8 right-8 md:bottom-10 md:right-10 w-10 h-10 rounded-full border border-white/20 group-hover:border-[var(--color-gold)] group-hover:bg-[var(--color-gold)]/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+          <div className="absolute bottom-8 right-8 md:bottom-10 md:right-10 w-10 h-10 rounded-full border border-white/20 group-hover:border-[var(--color-pink)] group-hover:bg-[var(--color-pink)]/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
             <svg
-              className="w-4 h-4 text-white group-hover:text-[var(--color-gold)]"
+              className="w-4 h-4 text-white group-hover:text-[var(--color-pink)]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -110,7 +110,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
 
         {/* Border glow on hover */}
-        <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-[var(--color-gold)]/30 transition-colors duration-500 pointer-events-none" />
+        <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-[var(--color-pink)]/30 transition-colors duration-500 pointer-events-none" />
       </div>
     </motion.article>
   );
@@ -121,7 +121,7 @@ export default function Projects() {
     <section id="proyectos" className="section-padding bg-[#0d0d0d] relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-radial from-[rgba(201,162,39,0.02)] to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-radial from-[rgba(219,39,119,0.02)] to-transparent rounded-full blur-3xl" />
       </div>
 
       <div className="container-custom relative z-10">
@@ -133,12 +133,12 @@ export default function Projects() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block text-[var(--color-gold)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
+            <span className="inline-block text-[var(--color-pink)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
               Portafolio
             </span>
             <h2 className="heading-display heading-lg">
               Nuestros casos{" "}
-              <span className="text-gradient-gold">hablan</span>{" "}
+              <span className="text-gradient-pink">hablan</span>{" "}
               por nosotros
             </h2>
           </motion.div>
@@ -151,10 +151,10 @@ export default function Projects() {
           >
             <Link
               to="/proyectos"
-              className="inline-flex items-center gap-3 text-[var(--color-gold)] hover:text-[var(--color-gold-light)] transition-colors group"
+              className="inline-flex items-center gap-3 text-[var(--color-pink)] hover:text-[var(--color-pink-light)] transition-colors group"
             >
               <span className="text-sm tracking-wider uppercase">Ver todos</span>
-              <span className="w-8 h-8 rounded-full border border-current flex items-center justify-center group-hover:bg-[var(--color-gold)]/10 transition-colors">
+              <span className="w-8 h-8 rounded-full border border-current flex items-center justify-center group-hover:bg-[var(--color-pink)]/10 transition-colors">
                 <svg
                   className="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform"
                   fill="none"

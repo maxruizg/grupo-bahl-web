@@ -25,19 +25,19 @@ export default function Hero() {
         {/* Animated gradient orbs */}
         <motion.div
           style={{ y }}
-          className="absolute top-1/4 -left-1/4 w-[600px] h-[600px] bg-[#c9a227]/10 rounded-full blur-[150px]"
+          className="absolute top-1/4 -left-1/4 w-[600px] h-[600px] bg-[#db2777]/10 rounded-full blur-[150px]"
         />
         <motion.div
           style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "50%"]) }}
-          className="absolute bottom-1/4 -right-1/4 w-[500px] h-[500px] bg-[#9a7b1f]/10 rounded-full blur-[120px]"
+          className="absolute bottom-1/4 -right-1/4 w-[500px] h-[500px] bg-[#9d174d]/10 rounded-full blur-[120px]"
         />
         
         {/* Grid pattern overlay */}
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
-            backgroundImage: `linear-gradient(rgba(201, 162, 39, 0.5) 1px, transparent 1px),
-                             linear-gradient(90deg, rgba(201, 162, 39, 0.5) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(219, 39, 119, 0.5) 1px, transparent 1px),
+                             linear-gradient(90deg, rgba(219, 39, 119, 0.5) 1px, transparent 1px)`,
             backgroundSize: "100px 100px",
           }}
         />
@@ -55,11 +55,11 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="inline-flex items-center gap-3 mb-8"
         >
-          <span className="w-12 h-px bg-gradient-to-r from-transparent to-[#c9a227]" />
-          <span className="text-[#c9a227] text-xs font-medium tracking-[0.3em] uppercase">
+          <span className="w-12 h-px bg-gradient-to-r from-transparent to-[#db2777]" />
+          <span className="text-[#db2777] text-xs font-medium tracking-[0.3em] uppercase">
             Agencia 360
           </span>
-          <span className="w-12 h-px bg-gradient-to-l from-transparent to-[#c9a227]" />
+          <span className="w-12 h-px bg-gradient-to-l from-transparent to-[#db2777]" />
         </motion.div>
 
         {/* Main heading */}
@@ -70,7 +70,7 @@ export default function Hero() {
           className="heading-display heading-xl mb-6"
         >
           <span className="block text-white">35 años de</span>
-          <span className="block text-gradient-gold italic">
+          <span className="block text-gradient-pink italic">
             resultados memorables
           </span>
         </motion.h1>
@@ -132,7 +132,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
               className="text-center"
             >
-              <p className="text-3xl md:text-4xl font-display font-light text-gradient-gold mb-2">
+              <p className="text-3xl md:text-4xl font-display font-light text-gradient-pink mb-2">
                 {stat.number}
               </p>
               <p className="text-gray-500 text-xs uppercase tracking-wider">
@@ -170,10 +170,10 @@ export default function Hero() {
       </motion.div>
 
       {/* Decorative corners */}
-      <div className="absolute top-8 left-8 w-16 h-16 border-l border-t border-[#c9a227]/20" />
-      <div className="absolute top-8 right-8 w-16 h-16 border-r border-t border-[#c9a227]/20" />
-      <div className="absolute bottom-8 left-8 w-16 h-16 border-l border-b border-[#c9a227]/20" />
-      <div className="absolute bottom-8 right-8 w-16 h-16 border-r border-b border-[#c9a227]/20" />
+      <div className="absolute top-8 left-8 w-16 h-16 border-l border-t border-[#db2777]/20" />
+      <div className="absolute top-8 right-8 w-16 h-16 border-r border-t border-[#db2777]/20" />
+      <div className="absolute bottom-8 left-8 w-16 h-16 border-l border-b border-[#db2777]/20" />
+      <div className="absolute bottom-8 right-8 w-16 h-16 border-r border-b border-[#db2777]/20" />
     </section>
   );
 }

@@ -2,7 +2,7 @@
 
 /* ═══════════════════════════════════════════════════════════════
    GRUPO BAHLCASA - LUXURY EVENT AGENCY DESIGN SYSTEM
-   Modern Editorial Aesthetic with Gold Accents
+   Modern Editorial Aesthetic with Pink, White & Black
 ═══════════════════════════════════════════════════════════════ */
 
 /* ─────────────────────────────────────────────────────────────
@@ -13,9 +13,10 @@
   --font-body: 'Outfit', system-ui, sans-serif;
 
   --color-brand-black: #0a0a0a;
-  --color-brand-gold: #c9a227;
-  --color-brand-gold-light: #d4af37;
-  --color-brand-gold-pale: #f5e6b8;
+  --color-brand-white: #ffffff;
+  --color-brand-pink: #db2777;
+  --color-brand-pink-light: #ec4899;
+  --color-brand-pink-pale: #fce7f3;
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -37,13 +38,13 @@
   --color-gray-100: #e5e5e5;
   --color-white: #fafafa;
 
-  /* Gold Palette - Enhanced */
-  --color-gold-dark: #9a7b1f;
-  --color-gold: #c9a227;
-  --color-gold-light: #d4af37;
-  --color-gold-bright: #e8c547;
-  --color-gold-pale: #f5e6b8;
-  --color-gold-glow: rgba(201, 162, 39, 0.15);
+  /* Pink Palette - Primary Accent */
+  --color-pink-dark: #9d174d;
+  --color-pink: #db2777;
+  --color-pink-light: #ec4899;
+  --color-pink-bright: #f472b6;
+  --color-pink-pale: #fce7f3;
+  --color-pink-glow: rgba(219, 39, 119, 0.15);
 
   /* Typography */
   --font-display: 'Cormorant Garamond', Georgia, serif;
@@ -97,8 +98,8 @@
   }
 
   ::selection {
-    background-color: var(--color-gold);
-    color: var(--color-black);
+    background-color: var(--color-pink);
+    color: var(--color-white);
   }
 
   /* Custom Scrollbar */
@@ -116,18 +117,18 @@
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-gold);
+    background: var(--color-pink);
   }
 
   /* Focus states */
   :focus-visible {
-    outline: 2px solid var(--color-gold);
+    outline: 2px solid var(--color-pink);
     outline-offset: 2px;
   }
 
   button:focus-visible,
   a:focus-visible {
-    outline: 2px solid var(--color-gold);
+    outline: 2px solid var(--color-pink);
     outline-offset: 4px;
   }
 }
@@ -145,12 +146,12 @@
     font-family: var(--font-body);
   }
 
-  .text-gold {
-    color: var(--color-gold);
+  .text-pink {
+    color: var(--color-pink);
   }
 
-  .text-gold-light {
-    color: var(--color-gold-light);
+  .text-pink-light {
+    color: var(--color-pink-light);
   }
 
   /* Display headings */
@@ -178,8 +179,8 @@
   }
 
   /* Gradient text */
-  .text-gradient-gold {
-    background: linear-gradient(135deg, var(--color-gold-pale) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+  .text-gradient-pink {
+    background: linear-gradient(135deg, var(--color-pink-pale) 0%, var(--color-pink) 50%, var(--color-pink-dark) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -230,12 +231,12 @@
     pointer-events: none;
   }
 
-  .mesh-gold {
-    background: radial-gradient(circle, var(--color-gold) 0%, transparent 70%);
+  .mesh-pink {
+    background: radial-gradient(circle, var(--color-pink) 0%, transparent 70%);
   }
 
-  .mesh-amber {
-    background: radial-gradient(circle, #b8860b 0%, transparent 70%);
+  .mesh-pink-light {
+    background: radial-gradient(circle, var(--color-pink-light) 0%, transparent 70%);
   }
 
   /* Button Styles */
@@ -257,8 +258,8 @@
   }
 
   .btn-primary {
-    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
-    color: var(--color-black);
+    background: linear-gradient(135deg, var(--color-pink) 0%, var(--color-pink-dark) 100%);
+    color: var(--color-white);
     position: relative;
     overflow: hidden;
   }
@@ -267,7 +268,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 100%);
+    background: linear-gradient(135deg, var(--color-pink-light) 0%, var(--color-pink) 100%);
     opacity: 0;
     transition: opacity 0.4s var(--ease-out-expo);
   }
@@ -283,13 +284,13 @@
 
   .btn-outline {
     background: transparent;
-    color: var(--color-gold);
-    border: 1px solid var(--color-gold);
+    color: var(--color-pink);
+    border: 1px solid var(--color-pink);
   }
 
   .btn-outline:hover {
-    background: var(--color-gold);
-    color: var(--color-black);
+    background: var(--color-pink);
+    color: var(--color-white);
   }
 
   .btn-ghost {
@@ -306,7 +307,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background: var(--color-gold);
+    background: var(--color-pink);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.4s var(--ease-out-expo);
@@ -318,7 +319,7 @@
   }
 
   .btn-ghost:hover {
-    color: var(--color-gold);
+    color: var(--color-pink);
   }
 
   /* Card Styles */
@@ -326,14 +327,14 @@
     background: rgba(20, 20, 20, 0.6);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(201, 162, 39, 0.1);
+    border: 1px solid rgba(219, 39, 119, 0.1);
     border-radius: 1rem;
     padding: 2rem;
     transition: all 0.5s var(--ease-out-expo);
   }
 
   .card-glass:hover {
-    border-color: rgba(201, 162, 39, 0.3);
+    border-color: rgba(219, 39, 119, 0.3);
     transform: translateY(-4px);
   }
 
@@ -346,8 +347,8 @@
   }
 
   .card-solid:hover {
-    border-color: var(--color-gold);
-    box-shadow: 0 0 40px var(--color-gold-glow);
+    border-color: var(--color-pink);
+    box-shadow: 0 0 40px var(--color-pink-glow);
   }
 
   .card-content {
@@ -355,23 +356,23 @@
   }
 
   /* Dividers & Decorations */
-  .divider-gold {
+  .divider-pink {
     width: 60px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+    background: linear-gradient(90deg, transparent, var(--color-pink), transparent);
   }
 
   .divider-vertical {
     width: 1px;
     height: 60px;
-    background: linear-gradient(180deg, transparent, var(--color-gold), transparent);
+    background: linear-gradient(180deg, transparent, var(--color-pink), transparent);
   }
 
   .corner-accent {
     position: absolute;
     width: 40px;
     height: 40px;
-    border-color: var(--color-gold);
+    border-color: var(--color-pink);
     border-style: solid;
     opacity: 0.5;
   }
@@ -419,14 +420,14 @@
   }
 
   .form-input:focus {
-    border-color: var(--color-gold);
+    border-color: var(--color-pink);
   }
 
   .form-input:focus + .form-label,
   .form-input:not(:placeholder-shown) + .form-label {
     transform: translateY(-1.5rem);
     font-size: 0.75rem;
-    color: var(--color-gold);
+    color: var(--color-pink);
   }
 
   .form-label {
@@ -463,8 +464,8 @@
   }
 
   .input-box:focus {
-    border-color: rgba(201, 162, 39, 0.5);
-    box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.1);
+    border-color: rgba(219, 39, 119, 0.5);
+    box-shadow: 0 0 0 2px rgba(219, 39, 119, 0.1);
   }
 
   .input-box.input-error {
@@ -507,7 +508,7 @@
   }
 
   .hover-glow:hover {
-    box-shadow: 0 0 60px var(--color-gold-glow);
+    box-shadow: 0 0 60px var(--color-pink-glow);
   }
 
   .hover-scale {
@@ -592,7 +593,7 @@
   .animate-slide-left { animation: slideInLeft 0.8s var(--ease-out-expo) forwards; }
   .animate-slide-right { animation: slideInRight 0.8s var(--ease-out-expo) forwards; }
   .animate-float { animation: float 6s ease-in-out infinite; }
-  .animate-pulse-gold { animation: pulse-gold 3s ease-in-out infinite; }
+  .animate-pulse-pink { animation: pulse-pink 3s ease-in-out infinite; }
   .animate-shimmer { animation: shimmer 2s infinite; }
   .animate-spin-slow { animation: spin-slow 20s linear infinite; }
   .animate-marquee { animation: marquee 30s linear infinite; }
@@ -667,7 +668,7 @@
   50% { transform: translateY(-20px); }
 }
 
-@keyframes pulse-gold {
+@keyframes pulse-pink {
   0%, 100% { opacity: 0.3; }
   50% { opacity: 0.6; }
 }

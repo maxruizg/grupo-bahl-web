@@ -80,7 +80,7 @@ export default function Proyectos() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-[var(--color-black)] relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-radial from-[rgba(201,162,39,0.03)] to-transparent rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-radial from-[rgba(219,39,119,0.03)] to-transparent rounded-full blur-3xl" />
         </div>
 
         <div className="container-custom relative z-10">
@@ -90,12 +90,12 @@ export default function Proyectos() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <span className="inline-block text-[var(--color-gold)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
+            <span className="inline-block text-[var(--color-pink)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
               Portafolio
             </span>
             <h1 className="heading-display text-4xl md:text-5xl lg:text-6xl text-white mb-6">
               Nuestros{" "}
-              <span className="text-gradient-gold">casos de éxito</span>
+              <span className="text-gradient-pink">casos de éxito</span>
             </h1>
             <p className="text-xl text-gray-400 leading-relaxed">
               Más de 35 años transformando ideas en experiencias memorables
@@ -120,7 +120,7 @@ export default function Proyectos() {
                 key={category}
                 className={`px-4 py-2 rounded-full text-sm transition-all duration-300 ${
                   index === 0
-                    ? "bg-[var(--color-gold)] text-[var(--color-black)]"
+                    ? "bg-[var(--color-pink)] text-[var(--color-black)]"
                     : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white border border-white/10"
                 }`}
               >
@@ -142,7 +142,7 @@ export default function Proyectos() {
                 <div className="relative overflow-hidden rounded-2xl bg-[var(--color-gray-900)] aspect-[4/3]">
                   {/* Gradient placeholder */}
                   <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-gray-800)] via-[var(--color-gray-900)] to-[var(--color-black)]">
-                    <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_50%,rgba(201,162,39,0.1),transparent_70%)]" />
+                    <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_50%,rgba(219,39,119,0.1),transparent_70%)]" />
                   </div>
 
                   {/* Overlay */}
@@ -150,7 +150,7 @@ export default function Proyectos() {
 
                   {/* Content */}
                   <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                    <span className="inline-block w-fit px-3 py-1 rounded-full bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/30 text-[var(--color-gold)] text-xs tracking-wider uppercase mb-3">
+                    <span className="inline-block w-fit px-3 py-1 rounded-full bg-[var(--color-pink)]/10 border border-[var(--color-pink)]/30 text-[var(--color-pink)] text-xs tracking-wider uppercase mb-3">
                       {project.category}
                     </span>
                     <h3 className="text-2xl font-display text-white mb-1">
@@ -159,13 +159,13 @@ export default function Proyectos() {
                     <p className="text-gray-400 group-hover:text-gray-300 transition-colors">
                       {project.subtitle}
                     </p>
-                    <span className="text-[var(--color-gold)] text-sm font-medium mt-2">
+                    <span className="text-[var(--color-pink)] text-sm font-medium mt-2">
                       {project.year}
                     </span>
                   </div>
 
                   {/* Border */}
-                  <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-[var(--color-gold)]/30 transition-colors duration-500 pointer-events-none" />
+                  <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-[var(--color-pink)]/30 transition-colors duration-500 pointer-events-none" />
                 </div>
               </motion.article>
             ))}
@@ -176,7 +176,7 @@ export default function Proyectos() {
       {/* CTA Section */}
       <section className="py-24 bg-[var(--color-black)] relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-radial from-[rgba(201,162,39,0.05)] to-transparent rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-radial from-[rgba(219,39,119,0.05)] to-transparent rounded-full blur-3xl" />
         </div>
 
         <div className="container-custom relative z-10">
@@ -188,7 +188,7 @@ export default function Proyectos() {
           >
             <h2 className="heading-display text-3xl md:text-4xl text-white mb-6">
               ¿Listo para crear tu{" "}
-              <span className="text-gradient-gold">próximo evento</span>?
+              <span className="text-gradient-pink">próximo evento</span>?
             </h2>
             <p className="text-gray-400 text-lg mb-8">
               Cuéntanos tu idea y juntos la convertiremos en una experiencia
@@ -196,7 +196,7 @@ export default function Proyectos() {
             </p>
             <Link
               to="/contacto"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[var(--color-gold)] to-[var(--color-gold-light)] text-[var(--color-black)] font-medium rounded-full hover:shadow-lg hover:shadow-[var(--color-gold)]/20 transition-all duration-300"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-pink-light)] text-white font-medium rounded-full hover:shadow-lg hover:shadow-[var(--color-pink)]/20 transition-all duration-300"
             >
               <span>Contáctanos</span>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -90,7 +90,7 @@ export function ErrorBoundary() {
       </head>
       <body className="bg-brand-black text-gray-200 font-body min-h-screen flex items-center justify-center">
         <div className="text-center p-8">
-          <h1 className="heading-display heading-lg text-gradient-gold mb-4">
+          <h1 className="heading-display heading-lg text-gradient-pink mb-4">
             Oops!
           </h1>
           <p className="text-gray-400 mb-8">

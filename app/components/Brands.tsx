@@ -19,7 +19,7 @@ const brands = [
 
 function BrandLogo({ name }: { name: string }) {
   return (
-    <div className="flex-shrink-0 w-48 h-24 mx-6 px-6 flex items-center justify-center bg-white/[0.02] rounded-xl border border-white/5 hover:border-[var(--color-gold)]/20 transition-all duration-300 group">
+    <div className="flex-shrink-0 w-48 h-24 mx-6 px-6 flex items-center justify-center bg-white/[0.02] rounded-xl border border-white/5 hover:border-[var(--color-pink)]/20 transition-all duration-300 group">
       <span className="text-gray-500 group-hover:text-gray-300 text-sm font-medium tracking-wide transition-colors text-center">
         {name}
       </span>
@@ -58,7 +58,7 @@ export default function Brands() {
   return (
     <section className="py-20 md:py-28 bg-[var(--color-black)] relative overflow-hidden">
       {/* Subtle top border */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--color-gold)]/20 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--color-pink)]/20 to-transparent" />
       
       <div className="container-custom mb-12">
         <motion.div
@@ -70,7 +70,7 @@ export default function Brands() {
         >
           <h2 className="heading-display text-2xl md:text-3xl text-white">
             Marcas que han{" "}
-            <span className="text-gradient-gold">confiado</span>{" "}
+            <span className="text-gradient-pink">confiado</span>{" "}
             en nosotros
           </h2>
         </motion.div>
@@ -83,7 +83,7 @@ export default function Brands() {
       </div>
 
       {/* Subtle bottom border */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--color-gold)]/20 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--color-pink)]/20 to-transparent" />
     </section>
   );
 }

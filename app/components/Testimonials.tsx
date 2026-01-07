@@ -58,11 +58,11 @@ export default function Testimonials() {
     <section className="py-24 md:py-32 bg-[var(--color-black)] relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-[rgba(201,162,39,0.03)] to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-[rgba(219,39,119,0.03)] to-transparent rounded-full blur-3xl" />
       </div>
 
       {/* Decorative quotes */}
-      <div className="absolute top-12 left-8 md:left-16 text-[200px] md:text-[300px] font-display text-[var(--color-gold)]/[0.03] leading-none select-none">
+      <div className="absolute top-12 left-8 md:left-16 text-[200px] md:text-[300px] font-display text-[var(--color-pink)]/[0.03] leading-none select-none">
         "
       </div>
 
@@ -75,12 +75,12 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-[var(--color-gold)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
+          <span className="inline-block text-[var(--color-pink)] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
             Testimonios
           </span>
           <h2 className="heading-display text-3xl md:text-4xl text-white">
             Lo que dicen{" "}
-            <span className="text-gradient-gold">nuestros clientes</span>
+            <span className="text-gradient-pink">nuestros clientes</span>
           </h2>
         </motion.div>
 
@@ -103,8 +103,8 @@ export default function Testimonials() {
 
                 {/* Author */}
                 <div className="flex flex-col items-center">
-                  <div className="w-16 h-px bg-gradient-to-r from-transparent via-[var(--color-gold)] to-transparent mb-6" />
-                  <p className="text-[var(--color-gold)] font-medium text-lg">
+                  <div className="w-16 h-px bg-gradient-to-r from-transparent via-[var(--color-pink)] to-transparent mb-6" />
+                  <p className="text-[var(--color-pink)] font-medium text-lg">
                     {testimonials[current].author}
                   </p>
                   <p className="text-gray-500 text-sm mt-1">
@@ -120,7 +120,7 @@ export default function Testimonials() {
             {/* Prev Button */}
             <button
               onClick={goPrev}
-              className="w-12 h-12 rounded-full border border-white/10 hover:border-[var(--color-gold)]/50 flex items-center justify-center text-gray-500 hover:text-[var(--color-gold)] transition-all duration-300 hover:bg-[var(--color-gold)]/5"
+              className="w-12 h-12 rounded-full border border-white/10 hover:border-[var(--color-pink)]/50 flex items-center justify-center text-gray-500 hover:text-[var(--color-pink)] transition-all duration-300 hover:bg-[var(--color-pink)]/5"
               aria-label="Anterior"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -136,7 +136,7 @@ export default function Testimonials() {
                   onClick={() => goTo(index)}
                   className={`transition-all duration-300 ${
                     index === current
-                      ? "w-8 h-2 bg-[var(--color-gold)] rounded-full"
+                      ? "w-8 h-2 bg-[var(--color-pink)] rounded-full"
                       : "w-2 h-2 bg-white/20 hover:bg-white/40 rounded-full"
                   }`}
                   aria-label={`Ir al testimonio ${index + 1}`}
@@ -147,7 +147,7 @@ export default function Testimonials() {
             {/* Next Button */}
             <button
               onClick={goNext}
-              className="w-12 h-12 rounded-full border border-white/10 hover:border-[var(--color-gold)]/50 flex items-center justify-center text-gray-500 hover:text-[var(--color-gold)] transition-all duration-300 hover:bg-[var(--color-gold)]/5"
+              className="w-12 h-12 rounded-full border border-white/10 hover:border-[var(--color-pink)]/50 flex items-center justify-center text-gray-500 hover:text-[var(--color-pink)] transition-all duration-300 hover:bg-[var(--color-pink)]/5"
               aria-label="Siguiente"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
